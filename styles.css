@@ -56,7 +56,7 @@
       .grid-4 { grid-template-columns: repeat(4, 1fr); }
     }
 
-    .card { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 20px; box-shadow: var(--shadow); }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 16px; padding: 20px; box-shadow: var(--shadow); margin-right: 15px;}
     .badge { display: inline-block; padding: 6px 10px; border: 1px solid var(--border); border-radius: 999px; margin: 4px 6px 0 0; font-size: 13px; color: var(--muted); background: color-mix(in srgb, var(--card) 92%, var(--bg) 8%); }
     .muted { color: var(--muted); }
     h1 { font-size: clamp(28px, 4vw, 44px); line-height: 1.1; margin: 8px 0 12px; }
@@ -65,9 +65,9 @@
     section { padding: 40px 0; }
     .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
 
-    .timeline { position: relative; padding-left: 28px; }
+    .timeline { position: relative; padding-left: 30px;}
     .timeline:before { content: ""; position: absolute; left: 10px; top: 6px; bottom: 6px; width: 2px; background: var(--border); }
-    .timeline-item { position: relative; margin-bottom: 16px; }
+    .timeline-item { position: relative; margin-bottom: 10px; padding-left: 18px;}
     .timeline-item:before { content: ""; position: absolute; left: -2px; top: 6px; width: 10px; height: 10px; background: var(--accent); border-radius: 50%; box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 30%, transparent); }
 
     footer { text-align: center; padding: 40px 0 80px; color: var(--muted); }
