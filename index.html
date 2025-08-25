@@ -1,36 +1,31 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
+<html lang="es" data-theme="dark"> <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Isaías Chavarría — Software Engineer, Technical Lead y Professor</title>
-  <meta name="description" content="Software Engineer based in Costa Rica, Sotware Arquitecture, System Design, Technical Lead." />
+  <title>Isaías Chavarría — Software Engineer, Technical Lead & Professor</title>
+  <meta name="description" content="Software Engineer based in Costa Rica, specializing in Software Architecture, System Design, and Technical Leadership." />
   <meta name="author" content="Isaías Chavarría" />
 
-  <!-- Open Graph / Twitter -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Isaías Chavarría — Professional Profile" />
   <meta property="og:description" content="Software Engineer based in Costa Rica, Software Arquitecture, System Design, Technical Lead." />
   <meta property="og:image" content="https://your-domain.com/og-image.jpg" />
   <meta property="og:url" content="https://isaiaschavarria.github.io/" />
 
-  <!-- Favicon (opcional) -->
   <link rel="icon" href="/favicon.ico" />
 
-  <!-- Fuente (opcional, sin dependencias externas si prefieres eliminar) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link href="styles.css" rel="stylesheet">
 
-  <!-- Schema.org JSON-LD -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Isaías Chavarría",
     "jobTitle": "Ingeniero en Sistemas · Líder Técnico · Profesor",
-    "email": "mailto:tu-correo@dominio.com",
+    "email": "mailto:isaias.chavarria@gmail.com",
     "url": "https://isaiaschavarria.github.io/",
     "image": "https://your-domain.com/avatar.jpg",
     "address": {"@type": "PostalAddress", "addressCountry": "CR", "addressLocality": "San José"},
@@ -43,197 +38,232 @@
   </script>
 </head>
 <body>
-  <header class="wrap">
-    <div style="display:flex;align-items:center;gap:12px">
-      <img src="images/foto_perfil.jpeg" alt="Foto de Isaías Chavarría" width="100" height="100" style="border-radius:50%;object-fit:cover;border:1px solid var(--border)" />
-      <strong>Isaías Chavarría</strong>
-      <span class="badge">San José, Costa Rica (UTC−6)</span>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="profile-info">
+        <img src="images/foto_perfil.jpeg" alt="Isaías Chavarría profile picture" />
+        <strong>Isaías Chavarría</strong>
+      </div>
+      <nav class="actions">
+        <a href="#proyectos">Projects</a>
+        <a href="#experiencia">Experience</a>
+        <a href="#docencia">Teaching</a>
+        <a href="#contacto">Contact</a>
+        <button id="theme-toggle" class="btn" title="Toggle Theme">☀️</button>
+      </nav>
     </div>
-    <nav class="actions">
-      <a href="#proyectos">Projects</a>
-      <a href="#experiencia">Experience</a>
-      <a href="#docencia">Teaching</a>
-      <!--<a href="#articulos">Projects</a>-->
-      <a href="#contacto">Contact</a>
-      <button id="theme" class="btn" title="Theme">🌓</button>
-    </nav>
   </header>
 
-  <main class="wrap">
-    <!-- HERO -->
-    <section aria-labelledby="hero-title" class="grid grid-2">
-      <div class="card">
-        <h2 id="hero-title">Software Engineer, Technical Lead, University Professor</h2>
-        <p class="muted">18+ years of experience on software enginenring, Technical leadership. Modern arquitectures <strong>(Python, .NET, SQL, Azure)</strong>, <strong>System Design</strong>, <strong>Applied IA</strong> for automation and productivity.</p>
-        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:10px">
-          <a class="btn primary" href="#contacto">Contact me</a>
-          <a class="btn" href="https://github.com/isaiaschavarria" target="_blank" rel="noopener">GitHub</a>
-          <a class="btn" href="https://www.linkedin.com/in/isaias-chavarria-mora/" target="_blank" rel="noopener">LinkedIn</a>
-          <a class="btn" href="Isaias_Resume.pdf" target="_blank" rel="noopener">Download Resume</a>
-        </div>
-      </div>
-      <aside class="card">
-        <h3>Availability</h3>
-        <p class="muted">Technical consulting, Architecture, Team guidance and mentorship, y custom software development.</p>
+  <main class="container">
+    <section id="hero" aria-labelledby="hero-title">
+      <div class="grid hero-grid">
         <div>
-          <span class="badge">Architecture</span>
-          <span class="badge">System Design</span>
-          <span class="badge">.NET / C#</span>
-          <span class="badge">SQL Server</span>
-          <span class="badge">PostgreSQL</span>
-          <span class="badge">mongoDB</span>
-          <span class="badge">Azure</span>
-          <span class="badge">CI/CD</span>
-          <span class="badge">Microservices</span>
-          <span class="badge">IA</span>
+          <span class="badge" style="margin-bottom: 16px;">San José, Costa Rica (UTC−6)</span>
+          <h2 id="hero-title">Software Engineer, Technical Lead & University Professor</h2>
+          <p class="muted">18+ years of experience in software engineering and technical leadership. Specializing in modern architectures <strong>(Python, .NET, SQL, Azure)</strong>, <strong>System Design</strong>, and <strong>Applied AI</strong> for automation and productivity.</p>
+            <!--More About Me-->
+            <div class="more-about-minimal">
+            <h4>More About Me</h4>
+            <ul>
+                <li>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <title>Checkmark Icon</title>
+                    <path fill-rule="evenodd" d="M19.916 4.626a.75.75 0 01.208 1.04l-9 13.5a.75.75 0 01-1.154.114l-6-6a.75.75 0 011.06-1.06l5.353 5.353 8.493-12.739a.75.75 0 011.04-.208z" clip-rule="evenodd" />
+                </svg>
+                <span>Gym lover</span>
+                </li>
+                <li>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                    <title>Checkmark Icon</title>
+                    <path fill-rule="evenodd" d="M19.916 4.626a.75.75 0 01.208 1.04l-9 13.5a.75.75 0 01-1.154.114l-6-6a.75.75 0 011.06-1.06l5.353 5.353 8.493-12.739a.75.75 0 011.04-.208z" clip-rule="evenodd" />
+                </svg>
+                <span>Finance & Investments Enthusiast</span>
+                </li>
+            </ul>
+            </div>
+          <!--Contact Section-->
+          <div class="hero-actions">
+            <a class="btn primary" href="#contacto">Contact Me</a>
+            <a class="btn" href="https://github.com/isaiaschavarria" target="_blank" rel="noopener">
+              <svg role="img" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              GitHub
+            </a>
+            <a class="btn" href="https://www.linkedin.com/in/isaias-chavarria-mora/" target="_blank" rel="noopener">
+               <svg role="img" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><title>LinkedIn</title><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/></svg>
+              LinkedIn
+            </a>
+            <a class="btn" href="Isaias_Resume.pdf">
+            <svg role="img" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <title>Download</title>
+                <path d="M12 1.5a.75.75 0 01.75.75v11.69l3.22-3.22a.75.75 0 111.06 1.06l-4.5 4.5a.75.75 0 01-1.06 0l-4.5-4.5a.75.75 0 111.06-1.06l3.22 3.22V2.25A.75.75 0 0112 1.5zM3 16.5a.75.75 0 01.75.75v2.25a1.5 1.5 0 001.5 1.5h13.5a1.5 1.5 0 001.5-1.5V17.25a.75.75 0 011.5 0v2.25a3 3 0 01-3 3H5.25a3 3 0 01-3-3V17.25a.75.75 0 01.75-.75z"/>
+            </svg>
+            Download Resume
+            </a>
+          </div>
         </div>
-        <div style="margin-top:16px">
-          <a class="btn" href="#contacto">📅 Schedule a call</a>
-        </div>
-      </aside>
+        <aside class="card availability-card">
+          <h3>Availability</h3>
+          <p class="muted">Available for technical consulting, architecture design, team guidance, and custom software development.</p>
+          <div class="badge-container">
+            <span class="badge">Architecture</span>
+            <span class="badge">System Design</span>
+            <span class="badge">.NET / C#</span>
+            <span class="badge">SQL Server</span>
+            <span class="badge">PostgreSQL</span>
+            <span class="badge">mongoDB</span>
+            <span class="badge">Azure</span>
+            <span class="badge">CI/CD</span>
+            <span class="badge">Microservices</span>
+            <span class="badge">AI</span>
+          </div>
+          <div style="margin-top: auto; padding-top: 16px;">
+            <a class="btn" href="#contacto">📅 Schedule a call</a>
+          </div>
+        </aside>
+      </div>
     </section>
 
-    <!-- PROYECTOS DESTACADOS -->
     <section id="proyectos" aria-labelledby="proyectos-title">
       <h2 id="proyectos-title">Highlighted Projects</h2>
-      <p class="muted">Public Code, demos and Prof of Concepts. Each card links to repository or technical articles.</p>
+      <p class="muted">A collection of public code, demos, and proofs of concept. Each card links to a repository or technical article.</p>
       <div class="grid grid-3">
-        <article class="card">
-          <h3>Plantilla de Arquitectura .NET moderna</h3>
-          <p>Monolito modular con capas limpias, autenticación, EF Core, pruebas y CI/CD en GitHub Actions.</p>
-          <p class="muted mono">C#, .NET 8, EF Core, xUnit, Docker, Actions</p>
-          <a class="btn" href="https://github.com/your-username/plantilla-arquitectura-dotnet" target="_blank" rel="noopener">Ver repositorio</a>
+        <article class="card project-card">
+          <div>
+            <h3>N-tier Architecture</h3>
+            <p>A .NET Core application built for a university course, demonstrating a fully integrated, functional application with all its components.</p>
+            <p class="muted mono">C#, .NET 8, MVC, Azure, AppServices</p>
+          </div>
+          <footer><a class="btn" href="https://github.com/isaiaschavarria/Employee_Perks" target="_blank" rel="noopener">See repository</a></footer>
         </article>
-        <article class="card">
-          <h3>Microservicio de Catálogo</h3>
-          <p>Servicio de catálogo con API REST y mensajería, observabilidad con OpenTelemetry y despliegue en Azure.</p>
-          <p class="muted mono">C#, Minimal APIs, RabbitMQ, OpenTelemetry, Azure</p>
-          <a class="btn" href="https://github.com/your-username/catalogo-microservicio" target="_blank" rel="noopener">Ver repositorio</a>
+        <article class="card project-card">
+          <div>
+            <h3>System Design Demos</h3>
+            <p>A repository of demos covering fundamental System Design concepts and patterns.</p>
+            <p class="muted mono">Python, C4, AOP, DesignByContract</p>
+          </div>
+          <footer><a class="btn" href="https://github.com/isaiaschavarria/System_Design_Demos" target="_blank" rel="noopener">See repository</a></footer>
         </article>
-        <article class="card">
-          <h3>Demo: IA aplicada al desarrollador</h3>
-          <p>Integración de LLM para generar pruebas unitarias y documentación técnica a partir de código.</p>
-          <p class="muted mono">Python/C#, LangChain, OpenAI, Markdown</p>
-          <a class="btn" href="https://github.com/your-username/dev-ia-productividad" target="_blank" rel="noopener">Ver repositorio</a>
+        <article class="card project-card">
+          <div>
+            <h3>AI: Deep Learning for Face Recognition</h3>
+            <p>An implementation of a solution for the Kaggle challenge "Recognizing Faces in the Wild".</p>
+            <p class="muted mono">Python, Pytorch, Jupiter Notebooks, AI</p>
+          </div>
+          <footer><a class="btn" href="https://github.com/isaiaschavarria/DeepLearningFamily" target="_blank" rel="noopener">See repository</a></footer>
         </article>
       </div>
     </section>
 
-    <!-- EXPERIENCIA -->
     <section id="experiencia" aria-labelledby="exp-title">
       <h2 id="exp-title">Experience</h2>
-      <div class="card timeline">
+      <div class="timeline">
         <div class="timeline-item">
-          <h3>Líder Técnico / Arquitecto de Software</h3>
-          <p class="muted">2020 — Presente · Costa Rica / Remoto</p>
-          <p>Dirección técnica, diseño de arquitecturas escalables, guía de buenas prácticas, performance y seguridad. Coordinación con stakeholders y acompañamiento a equipos.</p>
+          <h3>Technical Lead / Senior Software Engineer</h3>
+          <p class="muted">Since 2008</p>
+          <p>Leading technical direction, designing scalable architectures, establishing best practices for performance and security. Coordinating with stakeholders and mentoring teams.</p>
         </div>
         <div class="timeline-item">
-          <h3>Ingeniero de Software Senior</h3>
-          <p class="muted">2012 — 2020</p>
-          <p>Desarrollo backend y plataformas con .NET, SQL, mensajería, caching y automatización de CI/CD.</p>
-        </div>
-        <div class="timeline-item">
-          <h3>Profesor Universitario</h3>
-          <p class="muted">2016 — Presente</p>
-          <p>Cursos de arquitectura de software, patrones de diseño y tecnologías Microsoft. Talleres prácticos y mentoría.</p>
+          <h3>University Professor</h3>
+          <p class="muted">Since 2016 - Partial times</p>
+          <p>Teaching courses on software architecture, design patterns, and Microsoft technologies through practical workshops and mentorship.</p>
         </div>
       </div>
     </section>
 
-    <!-- DOCENCIA / CHARLAS -->
     <section id="docencia" aria-labelledby="doc-title">
-      <h2 id="doc-title">Teaching</h2>
+      <h2 id="doc-title">Teaching & Talks</h2>
       <div class="grid grid-3">
         <div class="card">
-          <h3>Arquitectura práctica con .NET 8</h3>
-          <p class="muted">Universidad · 2025</p>
-          <p>Diseño de sistemas, patrones hexagonales, pruebas y despliegue.</p>
-          <a class="btn" href="#">Slides</a>
+          <h3>Practical Architecture with .NET 8</h3>
+          <p class="muted">University · 2025</p>
+          <p>Covered system design, hexagonal patterns, testing, and deployment strategies.</p>
+          <a class="link" href="#">View Slides</a>
         </div>
         <div class="card">
-          <h3>IA generativa para equipos de desarrollo</h3>
+          <h3>Generative AI for Development Teams</h3>
           <p class="muted">Meetup · 2025</p>
-          <p>Casos de uso reales para acelerar productividad sin perder calidad.</p>
-          <a class="btn" href="#">Video</a>
+          <p>Presented real-world use cases to accelerate productivity without sacrificing quality.</p>
+          <a class="link" href="#">Watch Video</a>
         </div>
         <div class="card">
-          <h3>Observabilidad moderna</h3>
+          <h3>Modern Observability</h3>
           <p class="muted">Webinar · 2024</p>
-          <p>OpenTelemetry, tracing distribuido y SLOs.</p>
-          <a class="btn" href="#">Artículo</a>
+          <p>Explored OpenTelemetry, distributed tracing, and the importance of SLOs.</p>
+          <a class="link" href="#">Read Article</a>
         </div>
       </div>
     </section>
-
-    <!-- ARTÍCULOS / BLOG -->
+    
     <section id="articulos" aria-labelledby="art-title">
-      <h2 id="art-title">Artículos</h2>
+      <h2 id="art-title">Articles</h2>
       <div class="card">
-        <article>
-          <h3>Del monolito al monolito modular</h3>
-          <p class="muted">Estrategias pragmáticas para evolucionar sin dolor.</p>
-          <a class="btn" href="#">Leer</a>
-        </article>
-        <hr style="border:none;border-top:1px solid var(--border);margin:16px 0" />
-        <article>
-          <h3>Integrando LLMs en sistemas existentes</h3>
-          <p class="muted">Patrones de orquestación, seguridad y costos.</p>
-          <a class="btn" href="#">Leer</a>
-        </article>
+          <article>
+            <h3>From Monolith to Modular Monolith</h3>
+            <p class="muted">Pragmatic strategies for evolving systems without the pain of a full rewrite.</p>
+            <a class="link" href="#">Read Article →</a>
+          </article>
+          <hr style="border:none; border-top:1px solid var(--border); margin:24px 0" />
+          <article>
+            <h3>Integrating LLMs into Existing Systems</h3>
+            <p class="muted">A look at orchestration patterns, security, and cost management.</p>
+            <a class="link" href="#">Read Article →</a>
+          </article>
       </div>
     </section>
 
-    <!-- CONTACTO -->
     <section id="contacto" aria-labelledby="contact-title">
-      <h2 id="contact-title">Contact</h2>
+      <h2 id="contact-title">Get in Touch</h2>
       <div class="grid grid-2">
         <div class="card">
-          <p>¿Tienes un proyecto o necesitas consultoría? Estoy disponible para colaboraciones remotas con empresas de EE.UU., LATAM y Europa.</p>
-          <ul>
-            <li>📧 <a href="isaias.chavarria@gmail.com">Mail</a></li>
-            <li>💼 <a href="https://www.linkedin.com/in/isaias-chavarria-mora/" target="_blank" rel="noopener">LinkedIn</a></li>
-            <li>💻 <a href="https://github.com/isaiaschavarria" target="_blank" rel="noopener">GitHub</a></li>
+          <h3>Let's Collaborate</h3>
+          <p>Have a project in mind or need consulting? I'm available for remote collaborations with companies in the US, LATAM, and Europe.</p>
+          <ul style="list-style: none; padding: 0; margin-top: 20px; display: flex; flex-direction: column; gap: 12px;">
+            <li>📧 <a class="link" href="mailto:isaias.chavarria@gmail.com">isaias.chavarria@gmail.com</a></li>
+            <li>💼 <a class="link" href="https://www.linkedin.com/in/isaias-chavarria-mora/" target="_blank" rel="noopener">LinkedIn Profile</a></li>
+            <li>💻 <a class="link" href="https://github.com/isaiaschavarria" target="_blank" rel="noopener">GitHub Projects</a></li>
           </ul>
         </div>
-        <form class="card" action="https://formspree.io/f/your-id" method="POST">
-          <h3>Leave a message</h3>
-          <label>Name<br/><input required name="name" style="width:100%" class="input" /></label><br/>
-          <label>Email<br/><input required type="email" name="email" style="width:100%" class="input" /></label><br/>
-          <label>Message<br/><textarea required name="message" rows="5" style="width:100%" class="input"></textarea></label>
-          <div style="margin-top:10px;display:flex;gap:8px;align-items:center">
-            <button class="btn primary" type="submit">Send</button>
-            <span class="muted" style="font-size:12px">
+        <form class="card contact-form" action="https://formspree.io/f/your-id" method="POST">
+          <h3>Leave a Message</h3>
+          <label>Name<input required name="name" class="input" /></label>
+          <label>Email<input required type="email" name="email" class="input" /></label>
+          <label>Message<textarea required name="message" rows="5" class="input"></textarea></label>
+          <div>
+            <button class="btn primary" type="submit">Send Message</button>
           </div>
         </form>
       </div>
     </section>
 
-    <!-- CTA FINAL -->
-    <section class="card" style="text-align:center">
-      <h2>¿Need Help?</h2>
-      <p class="muted">Tell me about your technical challenges, I can help you to define strategy for end to end solutions.</p>
-      <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
-        <a class="btn primary" href="#contacto">Contact</a>
-        <a class="btn" href="Isaias_Resume.pdf" target="_blank" rel="noopener">Download Resume</a>
+    <section class="cta-section card" style="text-align:center; padding: 40px;">
+      <h2>Need help with a technical challenge?</h2>
+      <p class="muted">Let's talk about your project. I can help you define a strategy and build an end-to-end solution.</p>
+      <div style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap; margin-top: 24px;">
+        <a class="btn primary" href="#contacto">Contact Me</a>
+        <a class="btn" href="Isaias_Resume.pdf">
+            <svg role="img" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <title>Download</title>
+                <path d="M12 1.5a.75.75 0 01.75.75v11.69l3.22-3.22a.75.75 0 111.06 1.06l-4.5 4.5a.75.75 0 01-1.06 0l-4.5-4.5a.75.75 0 111.06-1.06l3.22 3.22V2.25A.75.75 0 0112 1.5zM3 16.5a.75.75 0 01.75.75v2.25a1.5 1.5 0 001.5 1.5h13.5a1.5 1.5 0 001.5-1.5V17.25a.75.75 0 011.5 0v2.25a3 3 0 01-3 3H5.25a3 3 0 01-3-3V17.25a.75.75 0 01.75-.75z"/>
+            </svg>
+            Download Resume
+            </a>
       </div>
     </section>
   </main>
 
-  <footer>
-    <div class="wrap">
-      <p>© <span id="year"></span> Isaías Chavarría • Built with pure con HTML/CSS. Hosted on GitHub Pages.</p>
-      <p class="muted">Last Update: <span id="updated"></span></p>
-      <div class="social" style="margin-top:8px">
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Isaías Chavarría • Built with HTML/CSS & ❤️. Hosted on GitHub Pages.</p>
+      <p class="muted">Last Updated: <span id="updated"></span></p>
+      <div class="social-links" style="margin-top:8px">
         <a class="badge" href="/rss.xml">RSS</a>
         <a class="badge" href="/sitemap.xml">Sitemap</a>
       </div>
     </div>
   </footer>
 
-  <script src="scripts/main_page.js"></script>
+  <script src="scripts/main_page.js" ></script>
 
-  <!-- Analytics (opcional) -->
-  <!-- <script defer data-domain="your-domain.com" src="https://plausible.io/js/script.js"></script> -->
 </body>
 </html>
